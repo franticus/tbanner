@@ -22,12 +22,12 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JS\tbanner\#src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JS\tbanner\#src" />
       <recent name="D:\JS\tbanner\#src\img" />
       <recent name="D:\JS\tbanner\#src\scss" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JS\tbanner\#src" />
     </key>
   </component>
@@ -44,7 +44,7 @@
       <workItem from="1631009928983" duration="13447000" />
       <workItem from="1631102813847" duration="22673000" />
       <workItem from="1631179587818" duration="26874000" />
-      <workItem from="1631262997221" duration="3315000" />
+      <workItem from="1631262997221" duration="12369000" />
     </task>
     <servers />
   </component>

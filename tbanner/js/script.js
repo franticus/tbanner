@@ -4,6 +4,20 @@ const thirdMonth = document.querySelector('#third');
 const continueBtn = document.querySelector('.continue')
 const pro = document.querySelector('.graph_pro')
 
+const swiper = new Swiper(".mySwiper", {
+    observer: true,
+    observeParents: true,
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+});
+
 const show = () => {
     setTimeout(() => {
         pro.classList.add('show')
@@ -15,7 +29,6 @@ const resetChoose = () => {
     firstMonth.classList.remove('active')
     secondMonth.classList.remove('active')
     thirdMonth.classList.remove('active')
-    console.log('click')
 }
 const activePlan = (plan, link) => {
     plan.addEventListener('click', () => {

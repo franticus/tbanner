@@ -325,6 +325,18 @@ select {
   background-size: cover;
 }
 
+.header .graph .path_line_iphoneXR {
+  visibility: hidden;
+}
+
+.header .graph .path_line_iphoneX {
+  visibility: hidden;
+}
+
+.header .graph .path_line_iphoneSE {
+  visibility: hidden;
+}
+
 .header .graph img {
   position: absolute;
   top: 0;
@@ -438,6 +450,7 @@ select {
 .slider .slider_item p {
   font-size: 15px;
   line-height: 18px;
+  text-align: left;
 }
 
 .month {
@@ -614,4 +627,141 @@ select {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+@media (min-width: 413px) {
+  .header .graph .path_line_iphoneXR {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 325px) {
+  .header .graph .path_line_iphoneSE {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    height: 263px;
+  }
+
+  .header .title {
+    font-size: 24px;
+    margin-top: 60px;
+  }
+
+  .header .title h1 {
+    font-size: 24px;
+  }
+
+  .header .title_girl_img {
+    width: 70px;
+    height: 130px;
+    top: 85px;
+    right: 25px;
+  }
+
+  .header .graph_free {
+    top: 103px;
+  }
+
+  .header .graph_red {
+    top: 130px;
+  }
+
+  .header .graph_pro {
+    top: 153px;
+  }
+
+  .header .graph_green {
+    top: 180px;
+  }
+
+  .header .graph_shine {
+    width: 150px;
+    height: 120px;
+    top: 100px;
+  }
+
+  .header .graph {
+    height: 102px;
+    top: 100px;
+  }
+
+  .slider {
+    top: 210px;
+  }
+
+  .slider .slider_item {
+    width: 280px;
+    height: 110px;
+    padding: 15px;
+  }
+
+  .slider .slider_item .slider_top {
+    font-size: 13px;
+  }
+
+  .slider .slider_item .stars {
+    width: 100px;
+    height: 16px;
+  }
+
+  .slider .slider_item p {
+    font-size: 13px;
+  }
+
+  .month {
+    width: 280px;
+    height: 132px;
+    top: 340px;
+  }
+
+  .month .month_item {
+    width: 88px;
+    height: 112px;
+  }
+
+  .month .month_item .month_top {
+    font-size: 11px;
+  }
+
+  .month .month_item .month_top .month_num {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .month .month_item p {
+    font-size: 11px;
+    line-height: 12px;
+  }
+
+  .month .month_item .discount {
+    font-size: 11px;
+    height: 21px;
+    top: -20px;
+  }
+
+  .month .month_item .sale {
+    top: 98px;
+    height: 15px;
+    font-size: 7px;
+  }
+
+  .footer {
+    top: 475px;
+  }
+
+  .footer a {
+    width: 280px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 326px) and (max-width: 412px) {
+  .header .graph .path_line_iphoneX {
+    visibility: visible;
+  }
 }
