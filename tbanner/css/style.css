@@ -72,6 +72,16 @@ select {
   font: inherit;
 }
 
+.wrapper_container {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+}
+
+.wrapper_container.dark {
+  background: #000;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,6 +136,12 @@ select {
   font-size: 34px;
 }
 
+.header .cross {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+}
+
 .header .title_girl {
   position: relative;
   z-index: 99;
@@ -138,6 +154,8 @@ select {
 }
 
 .header .graph_free {
+  width: 51px;
+  height: 27px;
   top: 185px;
   -webkit-animation: free 2.1s linear forwards;
           animation: free 2.1s linear forwards;
@@ -157,6 +175,8 @@ select {
 }
 
 .header .graph_pro {
+  width: 51px;
+  height: 27px;
   top: 275px;
   -webkit-animation: bounce 1s linear;
           animation: bounce 1s linear;
@@ -416,9 +436,16 @@ select {
   padding: 20px;
   color: #1A1A1A;
   background: #F3F2F9;
-  width: 345px;
+  width: 375px;
   height: 135px;
+  margin: 2px;
   border-radius: 10px;
+}
+
+.slider .slider_item.dark {
+  background: -o-linear-gradient(225deg, #262526 0%, #19181A 100%);
+  background: linear-gradient(225deg, #262526 0%, #19181A 100%);
+  color: #fff;
 }
 
 .slider .slider_item .slider_top {
@@ -485,6 +512,11 @@ select {
   border-radius: 10px;
   background: #F3F2F9;
   position: relative;
+}
+
+.month .month_item.dark {
+  background: #373640;
+  color: #fff;
 }
 
 .month .month_item.active {
@@ -609,15 +641,20 @@ select {
   border: none;
 }
 
-.footer small {
+.footer .copyright {
   font-size: 11px;
   line-height: 15px;
   opacity: 0.5;
 }
 
+.footer .copyright.dark {
+  color: #7D7D80;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -627,6 +664,79 @@ select {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+@media screen and (min-width: 413px) {
+  .header {
+    height: 471px;
+  }
+
+  .header .title_girl_img {
+    width: 160px;
+    height: 300px;
+    top: 115px;
+    right: 5px;
+  }
+
+  .header .graph_free {
+    top: 190px;
+  }
+
+  .header .graph_red {
+    top: 220px;
+  }
+
+  .header .graph_pro {
+    top: 285px;
+  }
+
+  .header .graph_green {
+    top: 315px;
+  }
+
+  .header .graph_shine {
+    top: 160px;
+    height: 200px;
+  }
+
+  .header .graph {
+    height: 200px;
+    top: 160px;
+  }
+
+  .slider {
+    top: 400px;
+    width: 1150px;
+  }
+
+  .slider .slider_item {
+    top: 400px;
+    height: 135px;
+    width: 1150px;
+  }
+
+  .month {
+    width: 374px;
+    height: 176px;
+    top: 560px;
+  }
+
+  .month .month_item {
+    width: 118px;
+    height: 151px;
+  }
+
+  .month .month_item .sale {
+    top: 135px;
+  }
+
+  .footer {
+    top: 740px;
+  }
+
+  .footer a {
+    width: 374px;
+  }
 }
 
 @media (min-width: 413px) {
@@ -691,16 +801,13 @@ select {
 
   .slider {
     top: 210px;
+    width: 850px;
   }
 
   .slider .slider_item {
     width: 280px;
     height: 110px;
     padding: 15px;
-  }
-
-  .slider .slider_item .slider_top {
-    font-size: 13px;
   }
 
   .slider .slider_item .stars {
@@ -761,6 +868,13 @@ select {
 }
 
 @media (min-width: 326px) and (max-width: 412px) {
+  .header .title_girl_img {
+    width: 140px;
+    height: 260px;
+    top: 115px;
+    right: 20px;
+  }
+
   .header .graph .path_line_iphoneX {
     visibility: visible;
   }

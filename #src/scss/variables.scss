@@ -6,7 +6,10 @@ $btn: linear-gradient(225deg, #542285 0%, #222266 100%);
 $dark_font: #1A1A1A;
 $light_font: #fff;
 $discount: #FCBF59;
-$dark_theme: linear-gradient(225deg, #262526 0%, #19181A 100%);
+$dark_theme_bg: #000;
+$dark_theme_slider: linear-gradient(225deg, #262526 0%, #19181A 100%);
+$dark_theme_month: #373640;
+$dark_theme_footer: #7D7D80;
 
 @mixin graph_line {
   background: rgb(255, 255, 255);
