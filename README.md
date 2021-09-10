@@ -1,6 +1,6 @@
 # tBanner Verv
 ## Html / Scss/ Js / Gulp
-Link: tbanner-verv.netlify.app
+Link: https://tbanner-verv.netlify.app
 
 ![Screenshot_6](https://user-images.githubusercontent.com/70944846/132883053-2db67dde-dedd-4b37-bacb-b6fbd3da555e.png)
 
