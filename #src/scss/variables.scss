@@ -1,0 +1,24 @@
+$main: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
+$graph_gradient: linear-gradient(to right, #4d46b1, #4e44ae, #5042ab, #5141a8, #523fa5, #523fa5, #523fa5, #523fa5, #5141a8, #5042ab, #4e44ae, #4d46b1);
+$slider_bg: #F3F2F9;
+$month_active: linear-gradient(225deg, #894AC9 0%, #4D46B1 100%);
+$btn: linear-gradient(225deg, #542285 0%, #222266 100%);
+$dark_font: #1A1A1A;
+$light_font: #fff;
+$discount: #FCBF59;
+
+@mixin graph_line {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.13657407407407407) 50%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.13657407407407407) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.13657407407407407) 50%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+}
+
+@mixin graph_shine {
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.19907407407407407) 50%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.19907407407407407) 50%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.19907407407407407) 50%, rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}

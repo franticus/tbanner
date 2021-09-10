@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5e33e5cc-4e34-4481-b6d1-69332ba676cb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1xo89NGz6MEEKyDmXUCBNqAPQ4j" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.17.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/#src" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JS\tbanner\#src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JS\tbanner\#src\img" />
+      <recent name="D:\JS\tbanner\#src\scss" />
+      <recent name="D:\JS\tbanner\#src" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e33e5cc-4e34-4481-b6d1-69332ba676cb" name="Default Changelist" comment="" />
+      <created>1631009927229</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631009927229</updated>
+      <workItem from="1631009928983" duration="13447000" />
+      <workItem from="1631102813847" duration="22673000" />
+      <workItem from="1631179587818" duration="26874000" />
+      <workItem from="1631262997221" duration="3315000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="169" key="#Plugins" timestamp="1631123450056">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="100" y="169" key="#Plugins/0.0.1920.1050@0.0.1920.1050" timestamp="1631123450056" />
+    <state x="231" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1631026589860">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="231" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1631026589860" />
+    <state x="147" y="307" key="EditFileWatcherDialog" timestamp="1631012946413">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="147" y="307" key="EditFileWatcherDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1631012946413" />
+    <state x="0" y="173" key="SettingsEditor" timestamp="1631013188548">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="0" y="173" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1631013188548" />
+  </component>
+</project>

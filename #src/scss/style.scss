@@ -1,0 +1,374 @@
+@import "variables";
+@import "reset";
+
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background: $main;
+  background-size: cover;
+  width: 100%;
+  color: $light_font;
+  height: 419px;
+  position: relative;
+
+  .title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90px;
+
+    h1 {
+      font-size: 34px;
+    }
+  }
+
+  .title_girl {
+    position: relative;
+    z-index: 99;
+  }
+
+  img {
+    position: absolute;
+    right: 17px;
+    top: 120px;
+  }
+
+  .graph_free {
+    top: 185px;
+    animation: free 2.1s linear forwards;
+    animation-iteration-count: 1;
+    z-index: 66;
+  }
+
+  .graph_red {
+    right: 30px;
+    top: 210px;
+    animation: free 2s linear forwards;
+    animation-iteration-count: 1;
+    z-index: 66;
+  }
+
+  .graph_pro {
+    top: 275px;
+    animation: bounce 1s linear;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    z-index: 66;
+    transition-duration: .5s;
+
+    &.show {
+      opacity: 1;
+    }
+  }
+
+  .bounce {
+    animation: pro 2.2s linear forwards;
+    animation-iteration-count: infinite;
+  }
+
+  .graph_green {
+    right: 30px;
+    top: 300px;
+    animation: free 2.1s linear forwards;
+    animation-iteration-count: 1;
+    z-index: 66;
+  }
+
+  .graph_shine {
+    @include graph_shine;
+    position: absolute;
+    top: 157px;
+    width: 200px;
+    height: 181px;
+    animation-delay: 3s;
+    animation: shine 5s linear forwards;
+    animation-iteration-count: infinite;
+    z-index: 1;
+  }
+
+  @keyframes shine {
+    0% {
+      left: -100%;
+    }
+    80% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes free {
+    0% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+
+  .graph {
+    margin: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100vw;
+    height: 181px;
+    top: 157px;
+    background: $graph_gradient;
+    background-size: cover;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .graph_line {
+      @include graph_line;
+      width: 100%;
+      height: 2px;
+      z-index: 33;
+    }
+
+    p {
+      margin-left: 20px;
+      font-size: 12px;
+      line-height: 14px;
+      z-index: 33;
+    }
+
+    .path_line {
+      position: absolute;
+      top: 0;
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: draw 2s linear forwards;
+      animation-iteration-count: 1;
+      z-index: 33;
+    }
+
+    @keyframes draw {
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+}
+
+.slider {
+  position: absolute;
+  top: 360px;
+  width: 1030px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+
+  .slider_item {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: $dark_font;
+    background: $slider_bg;
+    width: 345px;
+    height: 135px;
+    border-radius: 10px;
+    //margin: 3px;
+
+    .slider_top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 15px;
+      line-height: 18px;
+
+      small {
+        opacity: 0.5;
+      }
+    }
+
+    .stars {
+      display: flex;
+      width: 121px;
+      height: 21px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+}
+
+.month {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 530px;
+  border-radius: 10px;
+  width: 335px;
+  height: 156px;
+
+  .month_item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    width: 105px;
+    height: 131px;
+    border-radius: 10px;
+    background: $slider_bg;
+    position: relative;
+
+    &.active {
+      background: $graph_gradient;
+      color: $light_font
+    }
+
+    &.with_discount {
+      border-radius: 0 0 10px 10px;
+    }
+
+    .month_top {
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 5px;
+
+      .month_num {
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      span {
+        line-height: 15px;
+        display: block;
+      }
+
+    }
+
+    p {
+      margin: 3px auto;
+      width: 50px;
+      font-size: 13px;
+      line-height: 15px;
+    }
+
+    .month_p {
+      width: 80px;
+    }
+
+    .discount {
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      background: $discount;
+      position: absolute;
+      width: 100%;
+      height: 25px;
+      left: 0;
+      top: -25px;
+      border-radius: 10px 10px 0 0;
+      color: $dark_font;
+    }
+
+    .sale {
+      font-size: 9px;
+      font-weight: bold;
+      background: $discount;
+      position: absolute;
+      width: 100%;
+      height: 16px;
+      left: 0;
+      top: 115px;
+      border-radius: 0 0 10px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $dark_font;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 690px;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 335px;
+    height: 50px;
+    background: $btn;
+    color: $light_font;
+    border-radius: 5px;
+    font-size: 22px;
+    line-height: 28px;
+    border: none;
+  }
+
+  small {
+    font-size: 11px;
+    line-height: 15px;
+    opacity: 0.5;
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
