@@ -40,7 +40,7 @@ const resetChoose = () => {
 
 continueBtn.addEventListener('click', (e) => {
     !continueBtn.hasAttribute('target', '_blank') &&
-     alert('Choose the plan please!')
+    alert('Choose the plan please!')
 })
 
 const activePlan = (plan, link) => {
