@@ -37,10 +37,17 @@ const resetChoose = () => {
     secondMonth.classList.remove('active')
     thirdMonth.classList.remove('active')
 }
+
+continueBtn.addEventListener('click', (e) => {
+    !continueBtn.hasAttribute('target', '_blank') &&
+     alert('Choose the plan please!')
+})
+
 const activePlan = (plan, link) => {
     plan.addEventListener('click', () => {
         resetChoose()
         plan.classList.add('active')
+        continueBtn.setAttribute("target", '_blank');
         continueBtn.setAttribute("href", link);
     })
 }
